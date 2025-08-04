@@ -7,6 +7,14 @@ language = "javascript"
 manifest_version = 3
 name = "Fanout forwarding starter kit for JavaScript"
 
+[local_server.pushpin]
+enable = true
+
+[local_server.backends]
+[local_server.backends.origin]
+url = "http://localhost:3000/"
+override_host = "localhost:3000"
+
 [scripts]
-  build = "npm run build"
-  post_init = "npm install"
+build = "npm run build"
+post_init = "npm install"
