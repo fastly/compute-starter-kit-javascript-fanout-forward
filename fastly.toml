@@ -15,6 +15,13 @@ enable = true
 url = "http://localhost:3000/"
 override_host = "localhost:3000"
 
+[setup.backends]
+[setup.backends.origin]
+
+[setup.products]
+[setup.products.fanout]
+enable = true
+
 [scripts]
 build = "npm run build"
 post_init = "npm install"
